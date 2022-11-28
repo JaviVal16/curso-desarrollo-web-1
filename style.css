@@ -1,0 +1,111 @@
+/* 
+Paleta de colores:
+#FFCE2B -> Dandelion
+#42413D -> Carbon
+#B2AFAC -> Ash
+#959492 -> Dust 
+
+Font Family :
+font-family: 'Raleway', sans-serif;
+
+
+Medidas:
+EM: 16 px
+REM : 16px (variable :root) 
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #42413D;
+    color: #fff;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: transparent;
+    padding: 28px 12%;
+    transition: all .50s ease;
+}
+
+.logo {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.logo img {
+    height: 90px;
+    width: 90px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul a {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 500;
+    padding: 5px 0;
+    margin: 0px 30px;
+    transition: all .50s ease;
+}
+
+nav ul a:hover {
+    color: #FFCE2B;
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    margin-right: 25px;
+    margin-left: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: all .50s ease;
+    color: #fff;
+}
+
+.user:hover {
+    color: #FFCE2B;
+}
+
+.profile_icon {
+    font-size: 30px;
+}
+
+main {
+    display: none;
+}
+
+footer {
+    display: none;
+}
+
+h1 {
+    color: #b2afac;
+    border: 5px dashed #42413d;
+    border-style: solid;
+}
+
+p {
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
