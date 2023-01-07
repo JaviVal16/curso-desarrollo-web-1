@@ -1,0 +1,23 @@
+{
+  "name": "curso-desarrollo-web-1",
+  "version": "1.0.0",
+  "description": "https://www.flaticon.es/iconos-gratis/puntuacion Iconos creados por Freepik - Flaticon\r https://es.vecteezy.com/arte-vectorial/6138912-ovni-secuestrando-una-vaca-silueta-alienigena-nave-espacial-futurista-desconocido-objeto-volador-dibujo-animado-pegatina-aislado-sobre-fondo-azul-oscuro-plano-vector-ilustracion Imagen utilizada",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaviVal16/curso-desarrollo-web-1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JaviVal16/curso-desarrollo-web-1/issues"
+  },
+  "homepage": "https://github.com/JaviVal16/curso-desarrollo-web-1#readme",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}
