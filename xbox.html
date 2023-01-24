@@ -15,19 +15,17 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
     <!-- Estilos propios-->
     <link href="style.css" rel="stylesheet" />
-    <link href="base.css" rel="stylesheet" />
+    <link href="./sass/xbox.css" rel="stylesheet" />
     <title>El universo de la nave</title>
 </head>
 
 <body>
     <header>
-        <ul>
-            <li>
-                <a href="./index.html" class="logo">
-                    <img src="./images/Logo-removebg-preview.png" alt="Logo de la marca (Ir a la pagina inicial)">
-                    <!--  alt -> Descriptivo de la imagen -->
-                </a>
-            </li>
+        <a href="./index.html" class="logo">
+            <img src="./images/Logo-removebg-preview.png" alt="Logo de la marca (Ir a la pagina inicial)">
+            <!--  alt -> Descriptivo de la imagen -->
+        </a>
+        <ul class="navbar">
             <li class="animate__animated animate__rubberBand">
                 <a href="./xbox.html" class="active">Xbox</a>
             </li>
@@ -40,17 +38,18 @@
             <li>
                 <a href="./pc.html">PC</a>
             </li>
-            <li>
-                <a href="./crearPerfil.html" class="user">
-                    <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile" style="color: #00c040;">
-                    </iconify-icon>
-                    Login
-                </a>
-            </li>
         </ul>
+        <div class="log">
+            <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
+                style="color: #00c040;"></iconify-icon>
+            <a href="./crearPerfil.html" class="user">
+                Login
+            </a>
+            <div class="fa-solid fa-bars" id="menuH"></div>
+        </div>
     </header>
     <main class="mainXbox">
-        <aside>
+        <!-- <aside>
             <h4>Filtro (0)</h4>
             <ol>
                 <li>Marca</li>
@@ -58,10 +57,11 @@
                 <li>Modelo</li>
                 <li>Año</li>
             </ol>
-        </aside>
-        <div class="busqueda">
-            <input type="busqueda" name="" id="">
-        </div>
+        </aside> -->
+            <div class="form__group field">
+                <input type="text" class="form__field" placeholder="Nombre de video juego" name="name" id='name' />
+                <label for="name" class="form__label">Nombre de video juego</label>
+            </div>
         <section class="productos">
             <div class="card">
                 <div class="image">
@@ -207,6 +207,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
     <!-- iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>

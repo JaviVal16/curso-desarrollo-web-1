@@ -13,57 +13,55 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
     <!-- Estilos propios-->
     <link href="style.css" rel="stylesheet" />
-    <link href="base.css" rel="stylesheet" />
+    <link href="./sass/base.css" rel="stylesheet" />
     <title>El universo de la nave</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="./index.html" class="logo">
-                        <img src="./images/Logo-removebg-preview.png" alt="Logo de la marca (Ir a la pagina inicial)">
-                        <!--  alt -> Descriptivo de la imagen -->
-                    </a>
-                </li>
-                <li>
-                    <a href="./xbox.html">Xbox</a>
-                </li>
-                <li>
-                    <a href="./playstation.html">PlayStation</a>
-                </li>
-                <li>
-                    <a href="./nintendo.html">Nintendo</a>
-                </li>
-                <li>
-                    <a href="./pc.html">PC</a>
-                </li>
-                <li>
-                    <a href="./crearPerfil.html" class="user">
-                        <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile" style="color: #00c040;">
-                        </iconify-icon>
-                        Login
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
+        <a href="./index.html" class="animate__animated animate__backInLeft logo">
+            <img src="./images/Logo-removebg-preview.png" alt="Logo de la marca (Ir a la pagina inicial)">
+            <!--  alt -> Descriptivo de la imagen -->
+        </a>
+        <ul class="navbar">
+            <li>
+                <a href="./xbox.html">Xbox</a>
+            </li>
+            <li>
+                <a href="./playstation.html">PlayStation</a>
+            </li>
+            <li>
+                <a href="./nintendo.html">Nintendo</a>
+            </li>
+            <li>
+                <a href="./pc.html">PC</a>
+            </li>
+        </ul>
+        <div class="log">
+            <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
+                style="color: #00c040;"></iconify-icon>
+            <a href="./crearPerfil.html" class="user">
+                Login
+            </a>
+            <div class="fa-solid fa-bars" id="menuH"></div>
+        </div>
     </header>
     <main class="main">
-        <section>
-            <h1>ENTERATE DE TODO LO REFERENTE A LOS VIDEOJUEGOS</h1>
-            <h3>Inicios</h3>
+        <div class="introduccion">
+            <div class="titulos">
+                <h1>ENTERATE DE TODO LO REFERENTE A LOS VIDEOJUEGOS</h1>
+                <h3>Inicios</h3>
+            </div>
             <div class="video">
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/mWWp4tIjXCk"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen></iframe>
             </div>
-            <div class="historia">
-                <div class="oxo">
-                    <img src="./images/Oxo.jpg" class="oxo">
-
+        </div>
+        <div class="historia">
+            <div class="oxo">
+                <div class="oxoInfo">
                     <p>Durante bastante tiempo ha sido complicado señalar cual fue el primer videojuego, principalmente
                         debido a las múltiples definiciones de este que se han ido estableciendo, pero se puede
                         considerar
@@ -72,47 +70,61 @@
                         sobre la
                         EDSAC y permitía enfrentar a un jugador humano contra la máquina.
                     </p>
+                    <p>La computadora central Electronic Delay Storage Automatic Calculator (EDSAC) fue construida en el
+                        Laboratorio de Matemáticas de la Universidad de Cambridge entre 1946 y el 6 de 1949 de mayo,
+                        cuando
+                        corrió su primer programa,y se mantuvo en uso hasta el 11 de julio de 1958.El EDSAC fue una de
+                        las primeras computadoras de programa almacenado, con memoria que se podía leer o escribir, y
+                        llenaba una habitación entera; incluía tres tubos de rayos catódicos (CRT) de matriz de puntos
+                        de 35
+                        x 16 para mostrar gráficamente el estado de la memoria de la computadora.Como parte de una tesis
+                        sobre la interacción humano-computadora, Sandy Douglas, un estudiante de doctorado en
+                        matemáticas en
+                        la universidad, utiliza una de estas pantallas para retratar otra información para el usuario;
+                        eligió hacerlo mostrando el estado actual de un juego.</p>
                 </div>
-                <div class="tennisTwo">
-                    <div class="info">
-                        <p>
-                            En 1958 William Higginbotham creó, sirviéndose de un programa para el cálculo de
-                            trayectorias y
-                            un
-                            osciloscopio, Tennis for Two (tenis para dos): un simulador de tenis de mesa para
-                            entretenimiento de
-                            los visitantes de la exposición Brookhaven National Laboratory.
-                        </p>
-                        <p>
-                            Este videojuego fue el primero en permitir el juego entre dos jugadores humanos. Cuatro años
-                            más
-                            tarde Steve Russell, un estudiante del Instituto de Tecnología de Massachussets, dedicó seis
-                            meses a
-                            crear un juego para computadora usando gráficos vectoriales: Spacewar.
-                        </p>
-                        <p>
-                            En este juego, dos jugadores controlaban la dirección y la velocidad de dos naves espaciales
-                            que
-                            luchaban entre ellas. El videojuego funcionaba sobre un PDP-1 y fue el primero en tener un
-                            cierto
-                            éxito, aunque apenas fue conocido fuera del ámbito universitario.
-                        </p>
-                    </div>
-                    <img src="./images/tennis_for_two.jpg" alt="">
-                </div>
-                <div class="foxHounds">
-                    <img src="./images/fox_and_hounds.jpg" alt="">
+                <img src="./images/Oxo.jpg" class="oxoImg">
+            </div>
+            <div class="tennisTwo">
+                <div class="tennisInfo">
                     <p>
-                        En 1966 Ralph Baer empezó a desarrollar junto a Albert Maricon y Ted Dabney, un proyecto de
-                        videojuego llamado Fox and Hounds dando inicio al videojuego doméstico. Este proyecto
-                        evolucionaría
-                        hasta convertirse en la Magnavox Odyssey, el primer sistema doméstico de videojuegos lanzado en
-                        1972
-                        que se conectaba a la televisión y que permitía jugar a varios juegos pregrabados.
+                        En 1958 William Higginbotham creó, sirviéndose de un programa para el cálculo de
+                        trayectorias y
+                        un
+                        osciloscopio, Tennis for Two (tenis para dos): un simulador de tenis de mesa para
+                        entretenimiento de
+                        los visitantes de la exposición Brookhaven National Laboratory.
+                    </p>
+                    <p>
+                        Este videojuego fue el primero en permitir el juego entre dos jugadores humanos. Cuatro años
+                        más
+                        tarde Steve Russell, un estudiante del Instituto de Tecnología de Massachussets, dedicó seis
+                        meses a
+                        crear un juego para computadora usando gráficos vectoriales: Spacewar.
+                    </p>
+                    <p>
+                        En este juego, dos jugadores controlaban la dirección y la velocidad de dos naves espaciales
+                        que
+                        luchaban entre ellas. El videojuego funcionaba sobre un PDP-1 y fue el primero en tener un
+                        cierto
+                        éxito, aunque apenas fue conocido fuera del ámbito universitario.
                     </p>
                 </div>
+
+                <img class="tennis" src="./images/tennis_for_two.jpg" alt="">
             </div>
-        </section>
+            <div class="foxHounds">
+                <p>
+                    En 1966 Ralph Baer empezó a desarrollar junto a Albert Maricon y Ted Dabney, un proyecto de
+                    videojuego llamado Fox and Hounds dando inicio al videojuego doméstico. Este proyecto
+                    evolucionaría
+                    hasta convertirse en la Magnavox Odyssey, el primer sistema doméstico de videojuegos lanzado en
+                    1972
+                    que se conectaba a la televisión y que permitía jugar a varios juegos pregrabados.
+                </p>
+                <img class="fox" src="./images/fox_and_hounds.jpg" alt="">
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <div>
@@ -128,6 +140,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
     <!-- iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="./javascript/index.js"></script>
 </body>
 
 </html>
