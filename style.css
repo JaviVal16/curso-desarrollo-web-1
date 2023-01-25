@@ -87,15 +87,24 @@ header ul a:hover {
 .log {
   display: flex;
   align-items: center;
+  justify-content: space-around;
+  margin-left: 20px;
 }
 
-.user{
+.div_cart{
+  display: flex;
+  margin: 0px 15px 0px 15px;
+}
+
+
+
+/* .user{
   margin-left: 0;
 }
 
 .user:hover {
   color: #ffce2b;
-}
+} */
 
 .profile_icon {
   font-size: 30px;

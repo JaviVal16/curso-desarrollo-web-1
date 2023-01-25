@@ -1,7 +1,9 @@
 $primary: #ffce2b;
 $secondary: #f0dd5e;
 $white: #fff;
-$green: #00c040;
+$xbox: #00c040;
+$blue1: #679BF1;
+$blue2: #8AB9F1;
 
 .mainXbox {
     font-family: 'Poppins', sans-serif;
@@ -23,7 +25,7 @@ $green: #00c040;
     border-bottom: 2px solid $white;
     outline: 0;
     font-size: 1.3rem;
-    color: $green;
+    color: $xbox;
     padding: 7px 0;
     background: transparent;
     transition: border-color 0.2s;
@@ -68,19 +70,48 @@ $green: #00c040;
 }
 
 .form__field {
+
     &:required,
     &:invalid {
         box-shadow: none;
     }
 }
 
-.card{
-    background:none;
+.card {
+    background: none;
     box-shadow: none;
+
     a {
         color: $white;
     }
-    & :hover {
+
+    /* & :hover {
         color: $primary;
+    } */
+    .details_product {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        min
+        .input {
+            display: flex;
+            align-items: center;
+            font-size: medium;
+            margin: 5px 0px 15px 0px;
+
+            .input_number{
+                margin: 0px 10px 0px 10px;
+            }
+        }
+
+        .details_button {
+            background-color: $blue1;
+            color: $white;
+            border-radius: 15px;
+            border: none;
+            width: 200px;
+            font-size: large;
+        } 
     }
 }

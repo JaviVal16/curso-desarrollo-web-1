@@ -1,1 +1,101 @@
-/* sass --watch sass/base.scss:base.css *//*# sourceMappingURL=base.css.map */
+/* sass --watch sass/base.scss:base.css */
+.mainXbox {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  font-size: 1.5rem;
+}
+
+.form__group {
+  position: relative;
+  padding: 15px 0 20px;
+  width: 50%;
+  align-self: center;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 100%;
+  border: 0;
+  border-bottom: 2px solid #fff;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #00c040;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+.form__field::placeholder {
+  color: transparent;
+}
+.form__field:placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+}
+
+.form__field:focus {
+  padding-bottom: 6px;
+  font-weight: 700;
+  border-width: 3px;
+  border-image: linear-gradient(to right, #ffce2b, #f0dd5e);
+  border-image-slice: 1;
+}
+.form__field:focus ~ .form__label {
+  position: absolute;
+  top: 0;
+  display: block;
+  transition: 0.2s;
+  font-size: 1rem;
+  color: #ffce2b;
+  font-weight: 700;
+}
+
+.form__field:required, .form__field:invalid {
+  box-shadow: none;
+}
+
+.card {
+  background: none;
+  box-shadow: none;
+  /* & :hover {
+      color: $primary;
+  } */
+}
+.card a {
+  color: #fff;
+}
+.card .details_product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.card .details_product min .input {
+  display: flex;
+  align-items: center;
+  font-size: medium;
+  margin: 5px 0px 15px 0px;
+}
+.card .details_product min .input .input_number {
+  margin: 0px 10px 0px 10px;
+}
+.card .details_product .details_button {
+  background-color: #679BF1;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
+  width: 200px;
+  font-size: large;
+}
+
+/*# sourceMappingURL=base.css.map */

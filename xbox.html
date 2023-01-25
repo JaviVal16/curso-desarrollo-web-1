@@ -15,7 +15,7 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.css" rel="stylesheet" />
     <!-- Estilos propios-->
     <link href="style.css" rel="stylesheet" />
-    <link href="./sass/xbox.css" rel="stylesheet" />
+    <link href="./sass/base.css" rel="stylesheet" />
     <title>El universo de la nave</title>
 </head>
 
@@ -42,9 +42,13 @@
         <div class="log">
             <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
                 style="color: #00c040;"></iconify-icon>
-            <a href="./crearPerfil.html" class="user">
+            <div class="div_cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <sup class="cart_notif--notification">3</sup>
+            </div>
+            <!-- <a href="./crearPerfil.html" class="user">
                 Login
-            </a>
+            </a> -->
             <div class="fa-solid fa-bars" id="menuH"></div>
         </div>
     </header>
@@ -58,10 +62,10 @@
                 <li>Año</li>
             </ol>
         </aside> -->
-            <div class="form__group field">
-                <input type="text" class="form__field" placeholder="Nombre de video juego" name="name" id='name' />
-                <label for="name" class="form__label">Nombre de video juego</label>
-            </div>
+        <div class="form__group field">
+            <input type="text" class="form__field" placeholder="Nombre de video juego" name="name" id='name' />
+            <label for="name" class="form__label">Nombre de video juego</label>
+        </div>
         <section class="productos">
             <div class="card">
                 <div class="image">
@@ -69,6 +73,14 @@
                 </div>
                 <div class="titulo">
                     <a href="">Tower Princess </a>
+                </div>
+                <div class="details_product">
+                    <div class="input">
+                        <i class="input_minus fa-solid fa-minus"></i>
+                        <input class="input_number" type="number">
+                        <i class="input_plus fa-solid fa-plus"></i>
+                    </div>
+                    <button class="details_button">Agrgar al carrito</button>
                 </div>
             </div>
             <div class="card">
@@ -192,6 +204,22 @@
                 </div>
             </div>
         </section>
+        <!--     Moadl del cart-->
+        <div class="modal_cart">
+            <p class="cart_modal-title">Carrito</p>
+            <div class="cart_moda_checkout">
+                <div class="cart_moda_details">
+                    <img src="./images/WIP.png" alt="">
+                    <div>
+                        <p class="cart_modal_product">Nombre del producto</p>
+                        <p class="cart_modal_price">$123 x4 <span>$4321.00</span></p>
+                    </div>
+                    <i class="cart_button_delete" class="fa-solid fa-trash"></i>
+                </div>
+                <button class="cart_button_checkout"></button>
+            </div>
+        </div>
+        <!-- Fin modal cart -->
     </main>
     <footer class="footer">
         <div>
