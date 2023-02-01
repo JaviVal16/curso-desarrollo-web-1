@@ -1,9 +1,4 @@
-$primary: #ffce2b;
-$secondary: #f0dd5e;
-$white: #fff;
-$xbox: #00c040;
-$blue1: #679BF1;
-$blue2: #8AB9F1;
+@import 'variables';
 
 .mainXbox {
     font-family: 'Poppins', sans-serif;
@@ -80,37 +75,22 @@ $blue2: #8AB9F1;
 .card {
     background: none;
     box-shadow: none;
-
-    a {
-        color: $white;
+    & p {
+        margin: 0;
     }
 
-    /* & :hover {
-        color: $primary;
-    } */
-    .details_product {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        .input {
-            display: flex;
-            align-items: center;
-            font-size: medium;
-            margin: 5px 0px 15px 0px;
+    &_details_button {
+        background-color: $orange1;
+        color: $white;
+        border-radius: 10px;
+        border: none;
+        width: 200px;
+        height: 40px;
+        font-size: large;
+    }
 
-            .input_number{
-                margin: 0px 10px 0px 10px;
-            }
-        }
-
-        .details_button {
-            background-color: $blue1;
-            color: $white;
-            border-radius: 15px;
-            border: none;
-            width: 200px;
-            font-size: large;
-        } 
+    &_details_button:hover {
+        background-color: $primary;
+        color: $black;
     }
 }

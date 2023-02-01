@@ -1,4 +1,25 @@
 /* sass --watch sass/base.scss:base.css */
+.div_cart {
+  position: relative;
+  display: flex;
+}
+.div_cart .cart_notif--notification {
+  display: none;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: -8px;
+  right: -8px;
+  background-color: #ffce2b;
+  color: #222222;
+  border-radius: 15px;
+  text-align: center;
+  line-height: 0.7rem;
+}
+.div_cart:hover {
+  cursor: pointer;
+}
+
 .mainXbox {
   font-family: "Poppins", sans-serif;
   min-height: 100vh;
@@ -67,39 +88,89 @@
 .card {
   background: none;
   box-shadow: none;
-  /* & :hover {
-      color: $primary;
-  } */
 }
-.card a {
+.card p {
+  margin: 0;
+}
+.card_details_button {
+  background-color: #E47200;
   color: #fff;
-}
-.card .details_product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-}
-.card .details_product .input {
-  display: flex;
-  align-items: center;
-  font-size: medium;
-  margin: 5px 0px 15px 0px;
-}
-.card .details_product .input .input_number {
-  margin: 0px 10px 0px 10px;
-}
-.card .details_product .details_button {
-  background-color: #679BF1;
-  color: #fff;
-  border-radius: 15px;
+  border-radius: 10px;
   border: none;
   width: 200px;
+  height: 40px;
   font-size: large;
+}
+.card_details_button:hover {
+  background-color: #ffce2b;
+  color: #222222;
+}
+
+.modal_cart.open {
+  right: 2%;
 }
 
 .modal_cart {
+  height: 260px;
+  width: 360px;
+  border-radius: 10px;
+  box-shadow: 3px 3px 10px;
+  position: fixed;
+  top: 55px;
+  right: -100%;
+  z-index: 1002;
+  background-color: #ffce2b;
+  color: #222222;
+  transition: all 0.5s ease;
+}
+.modal_cart-title {
+  font-weight: 500;
+  padding: 15px;
+  border-bottom: 1px solid #222222;
+}
+.modal_cart_checkout {
+  padding: 10px;
+}
+.modal_cart_checkout-empty {
+  display: block;
+  font-weight: 500;
+  padding-top: 35px;
+  text-align: center;
+}
+.modal_cart_checkout-full {
   display: none;
+}
+.modal_cart_details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.modal_cart_img {
+  width: 70px;
+  border-radius: 5px;
+}
+.modal_cart_info p {
+  margin: 0px;
+}
+.modal_cart_button_delete {
+  width: 50px;
+  height: 50px;
+  color: #222222;
+  text-align: center;
+  line-height: 3rem;
+  cursor: pointer;
+}
+.modal_cart_button_checkout {
+  width: 100%;
+  border-radius: 10px;
+  background-color: #222222;
+  color: #fff;
+  border: none;
+}
+.modal_cart_button_checkout:hover {
+  background-color: #E47200;
+  color: #222222;
 }
 
 /*# sourceMappingURL=base.css.map */

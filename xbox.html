@@ -43,8 +43,8 @@
             <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
                 style="color: #00c040;"></iconify-icon>
             <div class="div_cart">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <sup class="cart_notif--notification">3</sup>
+                <i class="fa-solid fa-cart-shopping" id="cart"></i>
+                <div class="cart_notif--notification">3</div>
             </div>
             <!-- <a href="./crearPerfil.html" class="user">
                 Login
@@ -67,33 +67,24 @@
             <label for="name" class="form__label">Nombre de video juego</label>
         </div>
         <section class="productos">
-            <div class="card">
+            <!-- <div class="card">
                 <div class="image">
-                    <img src="./images/Tower-princess.png" alt="Tower Princess">
+                    <img src="./images/products/erebanshadowlegacy.jpg" alt="Tower Princess">
                 </div>
-                <div class="titulo">
-                    <a href="">Tower Princess </a>
-                </div>
-                <div class="details_product">
-                    <div class="input">
-                        <i class="input_minus fa-solid fa-minus"></i>
-                        <input class="input_number" type="number">
-                        <i class="input_plus fa-solid fa-plus"></i>
-                    </div>
-                    <button class="details_button">Agrgar al carrito</button>
-                </div>
+                <p>Tower Princess </p>
+                <p>$1000</p>
+                <button class="card_details_button" id="ToPr">Agrgar al carrito</button>
             </div>
             <div class="card">
                 <div class="image">
-                    <img src="./images/Cyber-punk-2077.jfif" alt="Cyberpunk 2077">
+                    <img class="image1" src="./images/products/forzahorizon5.jpg" alt="Cyberpunk 2077">
                 </div>
-                <div class="titulo">
-                    <a href="">Cyberpunk 2077 </a>
-                </div>
+                <p>Cyberpunk 2077 </p>
+                <button class="card_details_button" id="Cy20">Agrgar al carrito</button>
             </div>
             <div class="card">
                 <div class="image">
-                    <img src="./images/FIFA 23.jfif" alt="FIFA 23">
+                    <img src="./images/products/FIFA 23.jfif" alt="FIFA 23">
                 </div>
                 <div class="titulo">
                     <a href="">FIFA 23</a>
@@ -202,21 +193,26 @@
                 <div class="titulo">
                     <a href=""></a>
                 </div>
-            </div>
+            </div> -->
         </section>
         <!--     Moadl del cart-->
         <div class="modal_cart">
-            <p class="cart_modal-title">Carrito</p>
-            <div class="cart_moda_checkout">
-                <div class="cart_moda_details">
-                    <img src="./images/WIP.png" alt="">
-                    <div>
-                        <p class="cart_modal_product">Nombre del producto</p>
-                        <p class="cart_modal_price">$123 x4 <span>$4321.00</span></p>
-                    </div>
-                    <i class="cart_button_delete" class="fa-solid fa-trash"></i>
+            <p class="modal_cart-title">Carrito</p>
+            <div class="modal_cart_checkout">
+                <div class=" modal_cart_checkout-empty">
+                    <p>Tu carrito esta vacio</p>
                 </div>
-                <button class="cart_button_checkout"></button>
+                <div class=" modal_cart_checkout-full">
+                    <div class="modal_cart_details">
+                        <img class="modal_cart_img" src="./images/Tower-princess.png" alt="">
+                        <div class="modal_cart_info">
+                            <p class="cart_modal_product">Tower Princess</p>
+                            <p class="cart_modal_price">$123 x4 <span>$4321.00</span></p>
+                        </div>
+                        <i class="modal_cart_button_delete fa-solid fa-trash"></i>
+                    </div>
+                    <button class="modal_cart_button_checkout">Comprar</button>
+                </div>
             </div>
         </div>
         <!-- Fin modal cart -->
@@ -235,6 +231,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.0.1/mdb.min.js"></script>
     <!-- iconify -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
+    <script src="./javascript/productos.js"></script>
+    <script src="./javascript/juegos.js"></script>
     <script src="./javascript/index.js"></script>
 </body>
 

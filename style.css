@@ -245,7 +245,7 @@ gap: 50px;
 .card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -260,8 +260,14 @@ img {
   height: 100%;
 }
 
+.image{
+  height: 350px;
+
+}
+
 .titulo {
   height: 40px;
+  padding: 50px;
 }
 
 footer {
