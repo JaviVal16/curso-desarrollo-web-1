@@ -4,10 +4,10 @@
 let bars = document.querySelector('#menuH');
 let navbar = document.querySelector('.navbar');
 
-bars.onclick = () => {
+bars.addEventListener('click', () =>  {
     bars.classList.toggle('fa-xmark');
     navbar.classList.toggle('open');
-}
+});
 
 //Fin Despliegue menu hamburguesa
 
@@ -21,11 +21,12 @@ cart.onclick = () => {
 //Fin Despliegue modal Cart
 
 //Inicio Agregar productos al carrito
+let infoProductPrice = document.querySelector('.cart_modal_price');
 let cont = 0;
 const addToCartBtn = document.querySelector('#ToPr');
 let cartNotif = document.querySelector('.cart_notif--notification');
 
-addToCartBtn.onclick = () => {
+addToCartBtn.addEventListener('click', () => {
     cont += 1;
     cartNotif.innerHTML = cont;
     //console.log(cartNotif);
@@ -33,14 +34,8 @@ addToCartBtn.onclick = () => {
     infoProductPrice.innerHTML = `$123 x${cont} <span>$${cont * 123}.00</span>`;
     infoProduct.style.display = 'block';
     cartEmpty.style.display = 'none';       
-};
+});
 //Fin Agregar productos al carrito
-
-//Inicio Modal carrito Productos
-let infoProductPrice = document.querySelector('.cart_modal_price');
-
-
-//Fin Modal carrito Productos
 
 //Inicio Modal carrito Boton de borrar
 const deletBtn = document.querySelector('.modal_cart_button_delete');
