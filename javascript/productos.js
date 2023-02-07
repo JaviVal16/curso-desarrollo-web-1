@@ -7,7 +7,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-02',
@@ -17,7 +18,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-03',
@@ -27,7 +29,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-04',
@@ -37,7 +40,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-05',
@@ -47,7 +51,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-06',
@@ -57,7 +62,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-07',
@@ -67,7 +73,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-08',
@@ -77,7 +84,8 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
     {
         id: 'juego-09',
@@ -87,6 +95,9 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000
+        precio: 1000,
+        cantidad: 1
     },
 ];
+
+let carrito = [];

@@ -1,15 +1,14 @@
-
-
 //Inicio Despliegue menu hamburguesa
 let bars = document.querySelector('#menuH');
 let navbar = document.querySelector('.navbar');
 
-bars.addEventListener('click', () =>  {
+bars.addEventListener('click', () => {
     bars.classList.toggle('fa-xmark');
     navbar.classList.toggle('open');
 });
 
 //Fin Despliegue menu hamburguesa
+
 
 //Inicio Despliegue modal Cart
 let cart = document.querySelector('#cart');
@@ -20,30 +19,41 @@ cart.onclick = () => {
 }
 //Fin Despliegue modal Cart
 
+
 //Inicio Agregar productos al carrito
 let infoProductPrice = document.querySelector('.cart_modal_price');
-let cont = 0;
-const addToCartBtn = document.querySelector('#ToPr');
 let cartNotif = document.querySelector('.cart_notif--notification');
 
-addToCartBtn.addEventListener('click', () => {
-    cont += 1;
-    cartNotif.innerHTML = cont;
-    //console.log(cartNotif);
-    cartNotif.style.display = 'block';
-    infoProductPrice.innerHTML = `$123 x${cont} <span>$${cont * 123}.00</span>`;
-    infoProduct.style.display = 'block';
-    cartEmpty.style.display = 'none';       
-});
+const addToCartFunction = (juegoId, carrito) => {
+    const productSelect = arryProductos.find(juego => juego.id === juegoId);
+    carrito.push(productSelect);
+    console.log(carrito);
+}
+
+const showCartFunction = () => {
+    const productosCarrito = document.querySelector('.modal_cart_checkout-full');
+    carrito.forEach(producto => {
+        const div = document.createElement('div');
+        div.classList.add('modal_cart_details');
+        div.innerHTML = `
+            <img class="modal_cart_img" src="${producto.imagen}" alt="">
+            <div class="modal_cart_info">
+                <p class="cart_modal_product">${producto.titulo}</p>
+                <p class="cart_modal_price">$${producto.precio} x${producto.cantidad} <span>$4321.00</span></p>
+            </div>
+            <i class="modal_cart_button_delete fa-solid fa-trash"></i>    
+    `
+        productosCarrito.append(div);
+        const deletBtn = document.querySelector('.modal_cart_button_delete');
+        deletBtn.onclick = () => {
+            cartEmpty.style.display = 'block';
+            cartNotif.style.display = 'none';
+            infoProduct.style.display = 'none';
+        }
+    });
+}
 //Fin Agregar productos al carrito
 
 //Inicio Modal carrito Boton de borrar
-const deletBtn = document.querySelector('.modal_cart_button_delete');
 let infoProduct = document.querySelector('.modal_cart_checkout-full');
 let cartEmpty = document.querySelector('.modal_cart_checkout-empty');
-deletBtn.onclick = () => {
-    cartNotif.style.display = 'none';
-    cartEmpty.style.display = 'block';
-    infoProduct.style.display = 'none';
-    cont = 0;
-}
