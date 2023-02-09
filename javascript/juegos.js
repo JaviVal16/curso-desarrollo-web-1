@@ -18,8 +18,8 @@ arryProductos.forEach(producto => {
         cartEmpty.style.display = 'none';
         cartNotif.style.display = 'block';
         addToCartFunction(producto.id,carrito);
-        cartNotif.innerHTML = `${carrito.length}`;
-        //showCartFunction();
+        cartNotif.innerHTML = `${cont}`;
+        showCartFunction();
     });
 })
 
