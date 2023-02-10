@@ -10,7 +10,7 @@ arryProductos.forEach(producto => {
         </div>
         <p>${producto.titulo}</p>
         <p>$${producto.precio}</p>
-        <button class="card_details_button" id="${producto.id}">Agrgar al carrito</button>`
+        <button class="card_details_button" id="${producto.id}">Agregar al carrito</button>`
     productos.append(div);
     const addToCartBtn = document.getElementById(`${producto.id}`);
     addToCartBtn.addEventListener('click', () => {

@@ -66,13 +66,7 @@ const showCartFunction = () => {
         if (producto.cantidad <= 1) {
             cantidadP = `<p class="cart_modal_price">$${producto.precio}</p>`
         } else {
-            cantidadP = `<p class="cart_modal_price">$${producto.precio} x 
-                <select name="cantidad" id="cantidad">
-                    <option value="1">${producto.cantidad}</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-            </select>.
+            cantidadP = `<p class="cart_modal_price">$${producto.precio} x ${producto.cantidad}
             <span>$${producto.precio * producto.cantidad}.00</span></p>`
         }
         div.innerHTML =
