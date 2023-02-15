@@ -1,6 +1,3 @@
-const productos = document.querySelector('.productos');
-
-
 arryProductos.forEach(producto => {
     const div = document.createElement('div');
     div.classList.add('card');
