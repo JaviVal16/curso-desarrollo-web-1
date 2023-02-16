@@ -11,11 +11,7 @@ arryProductos.forEach(producto => {
     productos.append(div);
     const addToCartBtn = document.getElementById(`${producto.id}`);
     addToCartBtn.addEventListener('click', () => {
-        infoProduct.style.display = 'block';
-        cartEmpty.style.display = 'none';
-        cartNotif.style.display = 'block';
-        addToCartFunction(producto.id,carrito);
-        cartNotif.innerHTML = `${cont}`;
+        addToCartFunction(producto.id);
         showCartFunction();
     });
 })

@@ -1,4 +1,5 @@
 /* sass --watch sass/base.scss:base.css */
+/* sass ./sass/base.scss ./sass/base.css --watch */
 .div_cart {
   position: relative;
   display: flex;
@@ -8,8 +9,8 @@
   position: absolute;
   height: 15px;
   width: 15px;
-  top: -8px;
-  right: -8px;
+  top: -11px;
+  right: -11px;
   background-color: #ffce2b;
   color: #222222;
   border-radius: 15px;

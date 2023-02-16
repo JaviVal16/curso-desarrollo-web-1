@@ -99,5 +99,3 @@ const arryProductos = [
         cantidad: 1
     },
 ];
-
-let carrito = [];
