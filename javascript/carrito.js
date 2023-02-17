@@ -3,7 +3,21 @@ const addToCartFunction = (juegoId) => {
     const productSelect = arryProductos.find(juego => juego.id === juegoId);
     //console.log(productSelect);
 
-    
+    switch (productosEnCarrito) {
+        case null:
+
+            break;
+        case productosEnCarrito.length:
+
+            break;
+        case null:
+
+            break;
+
+        default:
+            break;
+    }
+
     if (carrito.includes(productSelect)) {
         productSelect.cantidad += 1;
     } else {
@@ -23,9 +37,16 @@ const showCartFunction = () => {
     let productosCarrito = document.querySelector('.modal_cart_checkout-full');
     actualizrNotifCart();
     cartNotif.innerHTML = `${cont}`;
-    infoProduct.style.display = 'block';
-    cartEmpty.style.display = 'none';
-    cartNotif.style.display = 'block';
+    if (carrito.length === 0) {
+        infoProduct.style.display = 'none';
+        cartEmpty.style.display = 'block';
+        cartNotif.style.display = 'none';
+    } else {
+
+        infoProduct.style.display = 'block';
+        cartEmpty.style.display = 'none';
+        cartNotif.style.display = 'block';
+    }
     productosCarrito.innerHTML = '';
     carrito.forEach(producto => {
         const div = document.createElement('div');
@@ -74,6 +95,9 @@ const actualizrBtnDelete = () => {
 let deleteFromCart = (e) => {
     let idBtn = e.currentTarget.id;
     const index = carrito.findIndex(producto => producto.id === idBtn);
+    const productDeleted = carrito.find(product => product.id === idBtn);
+    productDeleted.cantidad = 1;
+    carrito.splice(index, 1, productDeleted);
     carrito.splice(index, 1);
     showCartFunction();
     localStorage.setItem("productCart", JSON.stringify(carrito));
