@@ -1,9 +1,21 @@
 sig.addEventListener('click', () => {
     apiCall();
+    dos.classList.add('active');
+    uno.classList.remove('active')
+});
+dos.addEventListener('click', () => {
+    apiCall();
+    dos.classList.add('active');
+    uno.classList.remove('active')
+});
+uno.addEventListener('click', () => {
+    productos.innerHTML = '';
+    mostrarProductos();
+    dos.classList.remove('active');
+    uno.classList.add('active')
 });
 
 const apiCall = () => {
-    console.log('click');
     productos.innerHTML = '';
     fetch(localGet)
         .then(data => data.json())
