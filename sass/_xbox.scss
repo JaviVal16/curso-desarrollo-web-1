@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 .mainXbox {
     font-family: 'Poppins', sans-serif;
@@ -6,7 +7,7 @@
     font-size: 1.5rem;
 }
 
-.-enable{
+.-enable {
     display: flex !important;
     flex-direction: column;
 }
@@ -17,18 +18,21 @@
     justify-content: space-around;
     font-size: 20px;
     margin-bottom: 20px;
+
     &-dropdown {
         cursor: pointer;
 
         &_orden {
             padding: 5px;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
                 outline: 1.5px solid $secondary;
                 color: $primary;
                 border-radius: 10px;
             }
         }
+
         &_categorias {
             display: none;
             margin-left: 15px;
@@ -36,11 +40,10 @@
             &span {}
 
             :hover {
-                transform: scale(1.1);
-                color: $primary;
+                @include hoverPrincipal;
             }
         }
-        
+
     }
 }
 
@@ -116,6 +119,7 @@
 
     & p {
         margin: 0;
+        text-align: center;
     }
 
     &_details_button {
@@ -131,5 +135,21 @@
     &_details_button:hover {
         background-color: $primary;
         color: $black;
+    }
+}
+
+
+.pages {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    & span {
+        margin: 5px;
+        &:hover {
+            @include hoverPrincipal;
+        }
     }
 }

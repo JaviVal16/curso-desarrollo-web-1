@@ -26,6 +26,9 @@ let precioMe = document.querySelector('.precioMe');
 let alfaA = document.querySelector('.alfaA');
 let alfaZ = document.querySelector('.alfaZ');
 
-
+const localGet = './json/masProductos.json';
+const uno = document.getElementById('uno');
+const dos = document.getElementById('dos');
+const sig = document.getElementById('sig');
 
 

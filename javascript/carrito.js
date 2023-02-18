@@ -7,17 +7,12 @@ cart.addEventListener('click', () => {
 //Inicio Agregar productos al carrito
 const addToCartFunction = (juegoId) => {
     const productSelect = arryProductos.find(juego => juego.id === juegoId);
-    //console.log(productSelect);
     if (carrito.includes(productSelect)) {
-        console.log("if con carrito includes");
         productSelect.cantidad += 1;
     } else {
-        console.log("else de carrito includes");
         if (productosEnCarrito === null) {
-            console.log("if de LS null");
             carrito.push(productSelect);
         } else {
-            console.log("else de LS null");
             const index = carrito.findIndex(producto => producto.id === juegoId);
             const productAdd = carrito.find(product => product.id === juegoId);
             carrito.some(elem => elem.id === juegoId) ? (

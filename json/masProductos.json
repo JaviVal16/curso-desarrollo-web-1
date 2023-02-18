@@ -1,0 +1,134 @@
+[
+    {
+        "id": "juego-01b",
+        "titulo": "WWE 2K22",
+        "imagen": "./images/products/WWE.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 349.75,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-02b",
+        "titulo": "NBA 2K23",
+        "imagen": "./images/products/NBA 2K23.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 324.75,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-03b",
+        "titulo": "Rayman Origins",
+        "imagen": "./images/products/Rayman Origins.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 98.67,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-04b",
+        "titulo": "NARUTO: Ultimate Ninja STORM",
+        "imagen": "./images/products/naruto.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 350.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-05b",
+        "titulo": "DRAGON BALL FIGHTERZ",
+        "imagen": "./images/products/dragonball.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 2000.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-06b",
+        "titulo": "ASURA'S WRATH",
+        "imagen": "./images/products/asura.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 366.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-07b",
+        "titulo": "Grand Theft Auto V",
+        "imagen": "./images/products/GTAV.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 1299.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-08b",
+        "titulo": "Minecraft",
+        "imagen": "./images/products/minecraft.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 349.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-09b",
+        "titulo": "BioShock: The Collection",
+        "imagen": "./images/products/BioShock.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 241.59,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-10b",
+        "titulo": "Cuphead & The Delicious Last Course",
+        "imagen": "./images/products/cuphead.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 351.75,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-11b",
+        "titulo": "Far Cry Primal - Apex Edition",
+        "imagen": "./images/products/farcry.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 639.00,
+        "cantidad": 1
+    },
+    {
+        "id": "juego-12b",
+        "titulo": "Fallout 4: Game of the Year Edition",
+        "imagen": "./images/products/fallout.jpg",
+        "categoria": {
+            "id": "juegos",
+            "nombre": "xbox"
+        },
+        "precio": 799.00,
+        "cantidad": 1
+    }
+]

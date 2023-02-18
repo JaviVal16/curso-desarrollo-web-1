@@ -125,6 +125,7 @@
 }
 .card p {
   margin: 0;
+  text-align: center;
 }
 .card_details_button {
   background-color: #E47200;
@@ -138,6 +139,21 @@
 .card_details_button:hover {
   background-color: #ffce2b;
   color: #222222;
+}
+
+.pages {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.pages span {
+  margin: 5px;
+}
+.pages span:hover {
+  transform: scale(1.1);
+  color: #ffce2b;
 }
 
 .modal_cart.open {

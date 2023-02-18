@@ -98,4 +98,37 @@ const arryProductos = [
         precio: 1299.00,
         cantidad: 1
     },
+    {
+        id: 'juego-10',
+        titulo: "Assassin's creed odyssey",
+        imagen: './images/products/Assassins_Creed_Odyssey.jpg',
+        categoria: {
+            id: 'juegos',
+            nombre: 'xbox'
+        },
+        precio: 1199.00,
+        cantidad: 1
+    },
+    {
+        id: 'juego-11',
+        titulo: "Grounded",
+        imagen: './images/products/grunded.jpg',
+        categoria: {
+            id: 'juegos',
+            nombre: 'xbox'
+        },
+        precio: 1099.00,
+        cantidad: 1
+    },
+    {
+        id: 'juego-12',
+        titulo: "Call of Duty: Modern Warfare II",
+        imagen: './images/products/Call of Duty.jpg',
+        categoria: {
+            id: 'juegos',
+            nombre: 'xbox'
+        },
+        precio: 1049.25,
+        cantidad: 1
+    },
 ];
