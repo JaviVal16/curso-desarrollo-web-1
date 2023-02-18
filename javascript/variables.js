@@ -30,5 +30,6 @@ const localGet = './json/masProductos.json';
 const uno = document.getElementById('uno');
 const dos = document.getElementById('dos');
 const sig = document.getElementById('sig');
+const arryApi = [];
 
 

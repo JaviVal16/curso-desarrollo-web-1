@@ -34,6 +34,19 @@ mostrarCatOrden();
 //Inicio Categoria precio mayor a menor
 precioMa.addEventListener('click', () => {
     productos.innerHTML = '';
+    uno.classList === 'active' ? (
+        arryApi.sort((a,b) => {
+            if (a.precio == b.precio) {
+                return 0;
+            }
+            if (b.precio < a.precio) {
+                return -1;
+            }
+            return 1;
+        }),
+        precioMa.style.diplay,
+        mostrarProductos()
+    ):(
         arryProductos.sort((a,b) => {
             if (a.precio == b.precio) {
                 return 0;
@@ -42,9 +55,10 @@ precioMa.addEventListener('click', () => {
                 return -1;
             }
             return 1;
-        });
-        precioMa.style.diplay
-        mostrarProductos();
+        }),
+        precioMa.style.diplay,
+        mostrarProductos()
+    )
 });
 //Fin Categoria precio mayor a menor
 

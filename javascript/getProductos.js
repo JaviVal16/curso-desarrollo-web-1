@@ -9,6 +9,8 @@ dos.addEventListener('click', () => {
     uno.classList.remove('active')
 });
 uno.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     productos.innerHTML = '';
     mostrarProductos();
     dos.classList.remove('active');
@@ -16,10 +18,13 @@ uno.addEventListener('click', () => {
 });
 
 const apiCall = () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
     productos.innerHTML = '';
     fetch(localGet)
         .then(data => data.json())
         .then(info => info.forEach(juegos => {
+            arryApi.push(juegos);
             divP = document.createElement('div');
             divP.classList.add('card');
             divP.innerHTML = `
@@ -36,4 +41,5 @@ const apiCall = () => {
                 showCartFunction();
             });
         }))
+        console.log(arryApi);
 };
