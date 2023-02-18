@@ -6,6 +6,42 @@
     font-size: 1.5rem;
 }
 
+.filtro {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    margin-bottom: 20px;
+    &-dropdown {
+        cursor: pointer;
+
+        &_orden {
+            padding: 5px;
+            &:hover{
+                transform: scale(1.1);
+                outline: 1.5px solid $secondary;
+                color: $primary;
+                border-radius: 10px;
+            }
+        }
+        &_categorias {
+            display: none;
+            flex-direction: column;
+            margin-left: 15px;
+
+            &span {}
+
+            :hover {
+                transform: scale(1.1);
+                color: $primary;
+            }
+        &open{
+            display: flex;
+        }
+        }
+    }
+}
+
 .form__group {
     position: relative;
     padding: 15px 0 20px;
@@ -75,6 +111,7 @@
 .card {
     background: none;
     box-shadow: none;
+
     & p {
         margin: 0;
     }

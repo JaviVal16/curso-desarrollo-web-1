@@ -73,8 +73,12 @@
         border-radius: 5px;
     }
 
-    &_info p {
-        margin: 0px;
+    &_info {
+        width: 100%;
+        margin: 10px;
+        p{
+            margin: 0px;
+        }
     }
 
     &_button_delete {

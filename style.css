@@ -406,7 +406,7 @@ footer a:hover {
   footer {
     height: 100px;
     display: flex;
-    align-items: center;
+    align-items: center;;
   }
 
 }

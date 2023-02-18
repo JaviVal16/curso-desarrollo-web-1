@@ -18,6 +18,8 @@ let total = 0;
 let btnsDelete = document.querySelectorAll('.modal_cart_button_delete fa-solid fa-trash');
 let btnComprar = document.getElementById("btnComprar");
 
+let btnOrden = document.getElementById('btnOrden');
+let btnCateg = document.querySelector('.filtro-dropdown_categorias');
 
 
 

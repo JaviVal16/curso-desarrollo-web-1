@@ -1,3 +1,4 @@
+//Inicio Mostrar juegos
 arryProductos.forEach(producto => {
     const div = document.createElement('div');
     div.classList.add('card');
@@ -15,5 +16,15 @@ arryProductos.forEach(producto => {
         showCartFunction();
     });
 })
+//Fin mostrar juegos
 
+//Inicio Filtro Orden
+const mostrarCatOrden = () => {
+    btnOrden.addEventListener('click', () =>{
+        btnCateg.style.display = 'none' ? btnCateg.style.display = 'flex' : btnCateg.style.display = 'none';
+    });
+}
+mostrarCatOrden();
+
+//Fin Filtro Orden
 

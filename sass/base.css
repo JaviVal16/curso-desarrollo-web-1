@@ -27,6 +27,38 @@
   font-size: 1.5rem;
 }
 
+.filtro {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.filtro-dropdown {
+  cursor: pointer;
+}
+.filtro-dropdown_orden {
+  padding: 5px;
+}
+.filtro-dropdown_orden:hover {
+  transform: scale(1.1);
+  outline: 1.5px solid #f0dd5e;
+  color: #ffce2b;
+  border-radius: 10px;
+}
+.filtro-dropdown_categorias {
+  display: none;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.filtro-dropdown_categorias :hover {
+  transform: scale(1.1);
+  color: #ffce2b;
+}
+.filtro-dropdown_categoriasopen {
+  display: flex;
+}
+
 .form__group {
   position: relative;
   padding: 15px 0 20px;
@@ -168,6 +200,10 @@
   width: 70px;
   border-radius: 5px;
 }
+.modal_cart_info {
+  width: 100%;
+  margin: 10px;
+}
 .modal_cart_info p {
   margin: 0px;
 }
@@ -189,6 +225,85 @@
 .modal_cart_button_checkout:hover {
   background-color: #E47200;
   color: #222222;
+}
+
+.login-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+}
+
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+}
+
+.login-box .user-box {
+  position: relative;
+}
+
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.login-box .user-box label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -26px;
+  left: 0;
+  color: #ffce2b;
+  font-size: 16px;
+}
+
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #ffce2b;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: 0.5s;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+
+.login-box a:hover {
+  background: #ffce2b;
+  color: #222222;
+  border-radius: 5px;
+}
+
+.footerLog {
+  position: absolute;
 }
 
 /*# sourceMappingURL=base.css.map */

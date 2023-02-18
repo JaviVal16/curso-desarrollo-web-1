@@ -33,19 +33,19 @@
                 <a href="./xbox.html" class="active">Xbox</a>
             </li>
             <li>
-                <a href="./playstation.html">PlayStation</a>
+                <a href="#">PlayStation</a>
             </li>
             <li>
-                <a href="./nintendo.html">Nintendo</a>
+                <a href="#">Nintendo</a>
             </li>
             <li>
-                <a href="./pc.html">PC</a>
+                <a href="#">PC</a>
             </li>
         </ul>
         <div class="log">
             <a href="./crearPerfil.html">
-            <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
-            style="color: #00c040;"></iconify-icon>
+                <iconify-icon class="profile_icon" icon="healthicons:ui-user-profile"
+                    style="color: #00c040;"></iconify-icon>
             </a>
             <div class="div_cart">
                 <i class="fa-solid fa-cart-shopping" id="cart"></i>
@@ -58,10 +58,24 @@
         </div>
     </header>
     <main class="mainXbox">
-        <div class="form__group field">
-            <input type="text" class="form__field" placeholder="Nombre de video juego" name="name" id='name' />
-            <label for="name" class="form__label">Nombre de video juego</label>
-        </div>
+        <section class="filtro">
+            <div class="filtro-dropdown" id="btnOrden">
+                <div class="filtro-dropdown_orden">
+                    <span>Orden por </span>
+                    <i class="fa-solid fa-caret-down"></i>
+                </div>
+                <div class="filtro-dropdown_categorias">
+                    <span class="precioMa"><i class="fa-sharp fa-solid fa-angle-right"></i> Precio mayor a menor</span>
+                    <span class="precioMe"><i class="fa-sharp fa-solid fa-angle-right"></i> Precio menor a mayor</span>
+                    <span class="alfaA"><i class="fa-sharp fa-solid fa-angle-right"></i> Alfabetico A - Z</span>
+                    <span class="alfaZ"><i class="fa-sharp fa-solid fa-angle-right"></i> Alfabetico Z - A</span>
+                </div>
+            </div>
+            <div class="form__group field filtro-input">
+                <input type="text" class="form__field" placeholder="Nombre de video juego" name="name" id='name' />
+                <label for="name" class="form__label">Nombre de video juego</label>
+            </div>
+        </section>
         <section class="productos"> </section>
         <!--     Moadl del cart-->
         <div class="modal_cart">
