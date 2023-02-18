@@ -27,6 +27,11 @@
   font-size: 1.5rem;
 }
 
+.-enable {
+  display: flex !important;
+  flex-direction: column;
+}
+
 .filtro {
   display: flex;
   align-items: center;
@@ -48,15 +53,11 @@
 }
 .filtro-dropdown_categorias {
   display: none;
-  flex-direction: column;
   margin-left: 15px;
 }
 .filtro-dropdown_categorias :hover {
   transform: scale(1.1);
   color: #ffce2b;
-}
-.filtro-dropdown_categoriasopen {
-  display: flex;
 }
 
 .form__group {

@@ -6,6 +6,11 @@
     font-size: 1.5rem;
 }
 
+.-enable{
+    display: flex !important;
+    flex-direction: column;
+}
+
 .filtro {
     display: flex;
     align-items: center;
@@ -26,7 +31,6 @@
         }
         &_categorias {
             display: none;
-            flex-direction: column;
             margin-left: 15px;
 
             &span {}
@@ -35,10 +39,8 @@
                 transform: scale(1.1);
                 color: $primary;
             }
-        &open{
-            display: flex;
         }
-        }
+        
     }
 }
 

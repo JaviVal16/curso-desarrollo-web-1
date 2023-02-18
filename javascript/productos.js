@@ -7,7 +7,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 185.99,
         cantidad: 1
     },
     {
@@ -18,7 +18,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 1299.00,
         cantidad: 1
     },
     {
@@ -29,7 +29,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 1599.00,
         cantidad: 1
     },
     {
@@ -40,7 +40,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 1399.00,
         cantidad: 1
     },
     {
@@ -51,18 +51,18 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 729.00,
         cantidad: 1
     },
     {
         id: 'juego-06',
-        titulo: 'Halo Infinite',
+        titulo: 'Halo Infinite (Campaign)',
         imagen: './images/products/haloinfinite.jpg',
         categoria: {
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 1399.00,
         cantidad: 1
     },
     {
@@ -84,7 +84,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 113.99,
         cantidad: 1
     },
     {
@@ -95,7 +95,7 @@ const arryProductos = [
             id: 'juegos',
             nombre: 'xbox'
         },
-        precio: 1000,
+        precio: 1299.00,
         cantidad: 1
     },
 ];

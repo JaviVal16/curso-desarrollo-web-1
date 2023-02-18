@@ -21,6 +21,11 @@ let btnComprar = document.getElementById("btnComprar");
 let btnOrden = document.getElementById('btnOrden');
 let btnCateg = document.querySelector('.filtro-dropdown_categorias');
 
+let precioMa = document.querySelector('.precioMa');
+let precioMe = document.querySelector('.precioMe');
+let alfaA = document.querySelector('.alfaA');
+let alfaZ = document.querySelector('.alfaZ');
+
 
 
 
