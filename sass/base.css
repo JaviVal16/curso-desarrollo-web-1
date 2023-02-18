@@ -230,6 +230,13 @@ h1 {
 .modal_cart_info p {
   margin: 0px;
 }
+.modal_cart_cantidad {
+  cursor: pointer;
+}
+.modal_cart_cantidad :hover {
+  transform: scale(1.2);
+  color: #00c040;
+}
 .modal_cart_button_delete {
   width: 50px;
   height: 50px;
@@ -237,6 +244,10 @@ h1 {
   text-align: center;
   line-height: 3rem;
   cursor: pointer;
+}
+.modal_cart_button_delete:hover {
+  transform: scale(1.2);
+  color: #00c040;
 }
 .modal_cart_button_checkout {
   width: 100%;

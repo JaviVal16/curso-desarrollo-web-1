@@ -2,3 +2,7 @@
     transform: scale(1.1);
     color: $primary;
 }
+@mixin hoverXbox () {
+    transform: scale(1.2);
+    color: $xbox;
+}

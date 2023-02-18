@@ -59,6 +59,10 @@ const showCartFunction = () => {
                     <p class="cart_modal_product">${producto.titulo}</p>
                     ${cantidadP}
                 </div>
+                <div class="modal_cart_cantidad">
+                    <i class="fa-solid fa-plus" id="${producto.id}" ></i>
+                    <i class="fa-solid fa-minus" id="${producto.id}" ></i>
+                </div>
                 <i class="modal_cart_button_delete fa-solid fa-trash" id="${producto.id}"></i>    
             `
         productosCarrito.append(div);
@@ -69,15 +73,59 @@ const showCartFunction = () => {
     <p class="cart_modal_price">Total de ${cont} prodcutos: $${total}</p>
     <button id="btnComprar" class="modal_cart_button_checkout">Comprar</button>
     `;
+    actualizrCantidadCartMas();
+    actualizrCantidadCartMenos();
     actualizrBtnDelete();
     actualizrBtnComprar();
 }
 //Fin Mostrar productos al carrito
 
+
 const actualizrNotifCart = () => {
     cont = carrito.reduce((acumulador, productCantidad) => acumulador + productCantidad.cantidad, 0);
     total = carrito.reduce((acum, productPrecio) => acum + productPrecio.precio, 0);
 }
+
+
+
+//Inicio Aumentar cantidad o diisminuir con botones
+const actualizrCantidadCartMas = () => {
+    btnPlus = document.querySelectorAll('.fa-plus');
+    btnPlus.forEach(btn => {
+        btn.addEventListener('click', modifFromCartMas);
+    });
+}
+
+let modifFromCartMas = (e) => {
+    let idBtn = e.currentTarget.id;
+    const index = carrito.findIndex(producto => producto.id === idBtn);
+    const productModif = carrito.find(product => product.id === idBtn);
+    productModif.cantidad += 1;
+    carrito.splice(index, 1, productModif);
+    showCartFunction();
+    localStorage.setItem("productCart", JSON.stringify(carrito));
+}
+//Fin Aumentar cantidad o diisminuir con botones
+
+//Inicio Disminur cantidad o diisminuir con botones
+const actualizrCantidadCartMenos = () => {
+    btnPlus = document.querySelectorAll('.fa-minus');
+    btnPlus.forEach(btn => {
+        btn.addEventListener('click', modifFromCartMenos);
+    });
+}
+
+let modifFromCartMenos = (e) => {
+    let idBtn = e.currentTarget.id;
+    const index = carrito.findIndex(producto => producto.id === idBtn);
+    const productModif = carrito.find(product => product.id === idBtn);
+    productModif.cantidad === 1? productModif.cantidad -= 1 : 
+    carrito.splice(index, 1, productModif);
+    showCartFunction();
+    localStorage.setItem("productCart", JSON.stringify(carrito));
+}
+//Fin Disminuir cantidad o diisminuir con botones
+
 
 //Inicio btn borrar producto
 const actualizrBtnDelete = () => {
@@ -118,7 +166,6 @@ const actualizrBtnComprar = () => {
         showCartFunction();
     });
 }
-
 //Fin SweetAlert
 
 

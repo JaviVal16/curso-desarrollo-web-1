@@ -16,6 +16,7 @@ let cartNotif = document.querySelector('.cart_notif--notification');
 let cont = 0;
 let total = 0;
 let btnsDelete = document.querySelectorAll('.modal_cart_button_delete fa-solid fa-trash');
+let btnPlus = document.querySelectorAll('.fa-solid fa-plus');
 let btnComprar = document.getElementById("btnComprar");
 
 let btnOrden = document.getElementById('btnOrden');
