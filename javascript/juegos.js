@@ -46,9 +46,58 @@ precioMa.addEventListener('click', () => {
         precioMa.style.diplay
         mostrarProductos();
 });
-
-
 //Fin Categoria precio mayor a menor
+
+//Inicio Categoria precio menor a mayor
+precioMe.addEventListener('click', () => {
+    productos.innerHTML = '';
+        arryProductos.sort((a,b) => {
+            if (a.precio == b.precio) {
+                return 0;
+            }
+            if (b.precio > a.precio) {
+                return -1;
+            }
+            return 1;
+        });
+        precioMe.style.diplay
+        mostrarProductos();
+});
+//Fin Categoria precio menor a mayor
+
+//Inicio Categoria Alfabetico A-Z
+alfaA.addEventListener('click', () => {
+    productos.innerHTML = '';
+        arryProductos.sort((a,b) => {
+            if (a.titulo == b.titulo) {
+                return 0;
+            }
+            if (b.titulo < a.titulo) {
+                return -1;
+            }
+            return 1;
+        });
+        alfaA.style.diplay
+        mostrarProductos();
+});
+//Fin Categoria Alfabetico A-Z
+
+//Inicio Categoria Alfabetico Z-A
+alfaZ.addEventListener('click', () => {
+    productos.innerHTML = '';
+        arryProductos.sort((a,b) => {
+            if (a.titulo == b.titulo) {
+                return 0;
+            }
+            if (b.titulo < a.titulo) {
+                return -1;
+            }
+            return 1;
+        });
+        alfaZ.style.diplay
+        mostrarProductos();
+});
+//Fin Categoria Alfabetico Z-A
 
 //Fin Filtro Orden
 
