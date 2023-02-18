@@ -33,6 +33,7 @@ mostrarCatOrden();
 
 //Inicio Categoria precio mayor a menor
 precioMa.addEventListener('click', () => {
+    productos.innerHTML = '';
         arryProductos.sort((a,b) => {
             if (a.precio == b.precio) {
                 return 0;
@@ -42,8 +43,8 @@ precioMa.addEventListener('click', () => {
             }
             return 1;
         });
+        precioMa.style.diplay
         mostrarProductos();
-        console.log('click');
 });
 
 
