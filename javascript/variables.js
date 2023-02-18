@@ -3,6 +3,7 @@ const productos = document.querySelector('.productos');
 let bars = document.querySelector('#menuH');
 let navbar = document.querySelector('.navbar');
 
+let search = document.querySelector('.form__field');
 
 let cart = document.querySelector('#cart');
 let modalCart = document.querySelector('.modal_cart');
@@ -17,6 +18,7 @@ let cont = 0;
 let total = 0;
 let btnsDelete = document.querySelectorAll('.modal_cart_button_delete fa-solid fa-trash');
 let btnPlus = document.querySelectorAll('.fa-solid fa-plus');
+let btnMinus = document.querySelectorAll('.fa-solid fa-minus');
 let btnComprar = document.getElementById("btnComprar");
 
 let btnOrden = document.getElementById('btnOrden');

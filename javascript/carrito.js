@@ -109,8 +109,8 @@ let modifFromCartMas = (e) => {
 
 //Inicio Disminur cantidad o diisminuir con botones
 const actualizrCantidadCartMenos = () => {
-    btnPlus = document.querySelectorAll('.fa-minus');
-    btnPlus.forEach(btn => {
+    btnMinus = document.querySelectorAll('.fa-minus');
+    btnMinus.forEach(btn => {
         btn.addEventListener('click', modifFromCartMenos);
     });
 }
@@ -119,7 +119,7 @@ let modifFromCartMenos = (e) => {
     let idBtn = e.currentTarget.id;
     const index = carrito.findIndex(producto => producto.id === idBtn);
     const productModif = carrito.find(product => product.id === idBtn);
-    productModif.cantidad === 1? productModif.cantidad -= 1 : 
+    productModif.cantidad === 1 ? btnMinus.classList.add('animate__animated animate__swing') : productModif.cantidad -= 1;
     carrito.splice(index, 1, productModif);
     showCartFunction();
     localStorage.setItem("productCart", JSON.stringify(carrito));

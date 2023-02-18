@@ -125,6 +125,10 @@ h1 {
   box-shadow: none;
 }
 
+.-disable {
+  display: none;
+}
+
 .card {
   background: none;
   box-shadow: none;
