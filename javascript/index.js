@@ -4,9 +4,3 @@ bars.addEventListener('click', () => {
     navbar.classList.toggle('open');
 });
 //Fin Despliegue menu hamburguesa
-
-//Inicio Despliegue modal Cart
-cart.addEventListener('click', () => {
-    modalCart.classList.toggle('open');
-});
-//Fin Despliegue modal Cart

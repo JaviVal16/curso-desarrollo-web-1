@@ -1,31 +1,30 @@
+//Inicio Despliegue modal Cart
+cart.addEventListener('click', () => {
+    modalCart.classList.toggle('open');
+});
+//Fin Despliegue modal Cart
+
 //Inicio Agregar productos al carrito
 const addToCartFunction = (juegoId) => {
     const productSelect = arryProductos.find(juego => juego.id === juegoId);
     //console.log(productSelect);
-
-    switch (productosEnCarrito) {
-        case null:
-
-            break;
-        case productosEnCarrito.length:
-
-            break;
-        case null:
-
-            break;
-
-        default:
-            break;
-    }
-
     if (carrito.includes(productSelect)) {
+        console.log("if con carrito includes");
         productSelect.cantidad += 1;
     } else {
+        console.log("else de carrito includes");
         if (productosEnCarrito === null) {
+            console.log("if de LS null");
             carrito.push(productSelect);
         } else {
+            console.log("else de LS null");
             const index = carrito.findIndex(producto => producto.id === juegoId);
-            carrito[index].cantidad += 1;
+            const productAdd = carrito.find(product => product.id === juegoId);
+            carrito.some(elem => elem.id === juegoId) ? (
+                productAdd.cantidad += 1,
+                carrito.splice(index, 1, productAdd)
+            ) :
+                carrito.push(productSelect)
         }
     }
     localStorage.setItem("productCart", JSON.stringify(carrito))
@@ -73,9 +72,10 @@ const showCartFunction = () => {
     infoProduct.innerHTML =
         `    
     <p class="cart_modal_price">Total de ${cont} prodcutos: $${total}</p>
-    <button class="modal_cart_button_checkout">Comprar</button>
+    <button id="btnComprar" class="modal_cart_button_checkout">Comprar</button>
     `;
     actualizrBtnDelete();
+    actualizrBtnComprar();
 }
 //Fin Mostrar productos al carrito
 
@@ -103,6 +103,28 @@ let deleteFromCart = (e) => {
     localStorage.setItem("productCart", JSON.stringify(carrito));
 }
 //Fin btn borrar producto
+
+
+
+//Inicio SweetAlert
+const actualizrBtnComprar = () => {
+    btnComprar = document.getElementById("btnComprar");
+
+    btnComprar.addEventListener('click', () => {
+        Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Tu compra ha sido procesada con éxito',
+            showConfirmButton: false,
+            timer: 2000
+        });
+        carrito = [];
+        localStorage.setItem("productCart", JSON.stringify(carrito));
+        showCartFunction();
+    });
+}
+
+//Fin SweetAlert
 
 
 if (productosEnCarrito) {

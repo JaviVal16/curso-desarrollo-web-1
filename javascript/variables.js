@@ -16,6 +16,8 @@ let cartNotif = document.querySelector('.cart_notif--notification');
 let cont = 0;
 let total = 0;
 let btnsDelete = document.querySelectorAll('.modal_cart_button_delete fa-solid fa-trash');
+let btnComprar = document.getElementById("btnComprar");
+
 
 
 
